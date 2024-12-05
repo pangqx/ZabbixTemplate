@@ -27,7 +27,6 @@
   - **Expression**:    
 <br>
 <br>
-     
   - **Name**: Oracle数据库表空间使用率 (<表空间名>：大于{$ORACLE.TBS.USED.PCT.MAX.HIGH}，实例：{$ORACLE.SERVICE})
   - **Severity**: High
   - **Expression**:
@@ -44,11 +43,12 @@
 
 ### Trigger
 
-  - **Name**: Oracle数据库备库同步延迟大于{\$ORACLE.DATAGUARD.APPLAG.WARN}分钟，实例：{$ORACLE.SERVICE}
+  - **Name**: Oracle数据库备库同步延迟大于{$ORACLE.DATAGUARD.APPLAG.WARN}分钟，实例：{$ORACLE.SERVICE}
   - **Severity**: Warning
   - **Expression**: 
-<br />
-  - **Name**: Oracle数据库备库同步延迟大于{\$ORACLE.DATAGUARD.APPLAG.HIGH}分钟，实例：{$ORACLE.SERVICE}
+<br>
+<br>
+  - **Name**: Oracle数据库备库同步延迟大于{$ORACLE.DATAGUARD.APPLAG.HIGH}分钟，实例：{$ORACLE.SERVICE}
   - **Severity**: High
   - **Expression**: 
 
@@ -64,11 +64,12 @@
 
 ### Trigger
 
-  - **Name**: Oracle数据库进程使用率大于{\$.ORACLE.PROC.USED.PCT.WARN}，实例：{$ORACLE.SERVICE}
+  - **Name**: Oracle数据库进程使用率大于{$.ORACLE.PROC.USED.PCT.WARN}，实例：{$ORACLE.SERVICE}
   - **Severity**: Warning
   - **Expression**: 
-<br />
-  - **Name**: Oracle数据库进程使用率大于{\$.ORACLE.PROC.USED.PCT.HIGH}，实例：{$ORACLE.SERVICE}
+<br>
+<br>
+  - **Name**: Oracle数据库进程使用率大于{$.ORACLE.PROC.USED.PCT.HIGH}，实例：{$ORACLE.SERVICE}
   - **Severity**: High
   - **Expression**: 
 
