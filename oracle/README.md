@@ -7,19 +7,9 @@
 | $ORACLE.TBS.USED.PCT.MAX.HIGH | 95 |
 | $ORACLE.DATAGUARD.APPLAG.WARN | 10 |
 | $ORACLE.DATAGUARD.APPLAG.HIGH | 60 |
-| $ |  |
-| $ |  |
-| $ |  |
-| $ |  |
-| $ |  |
-| $ |  |
-| $ |  |
-| $ |  |
-| $ |  |
-| $ |  |
-| $ |  |
-| $ |  |
-| $ |  |
+| $ORACLE.PROC.USED.PCT.WARN | 85 |
+| $ORACLE.PROC.USED.PCT.HIGH | 95 |
+
 
 
 ---
@@ -41,7 +31,7 @@
   - **Expression**:
 
 ### Script
-  - tbs_used_pct.sql
+  - get_tbs_pct_info.sql
 ---
 
 ### Item
@@ -62,6 +52,58 @@
 
 ### Script
   - apply_lag.sql
+---
+
+### Item
+  - **Name**: Oracle数据库进程使用率
+  - **Type of information**: Numeric(float)
+  - **Units**: %
+  - **Update interval**: 5m
+
+### Trigger
+
+  - **Name**: Oracle数据库进程使用率大于{\$.ORACLE.PROC.USED.PCT.WARN}，实例：{$ORACLE.SERVICE}
+  - **Severity**: Warning
+  - **Expression**: 
+<br>
+  - **Name**: Oracle数据库进程使用率大于{\$.ORACLE.PROC.USED.PCT.HIGH}，实例：{$ORACLE.SERVICE}
+  - **Severity**: High
+  - **Expression**: 
+
+### Script
+  - db_usedprocs_pct.sql
+---
+
+### Item
+  - **Name**: Oracle数据库锁冲突数量
+  - **Type of information**: Numeric(unsigned)
+  - **Units**: 
+  - **Update interval**: 5m
+
+### Trigger
+
+  - **Name**: Oracle数据库锁冲突数量大于0，实例：{$ORACLE.SERVICE}
+  - **Severity**: Warning
+  - **Expression**: 
+
+### Script
+  - db_lock_conflicts.sql
+---
+
+### Item
+  - **Name**: Oracle数据库失效对象数量
+  - **Type of information**: Numeric(unsigned)
+  - **Units**: 
+  - **Update interval**: 5m
+
+### Trigger
+
+  - **Name**: Oracle数据库失效对象数量大于0，实例：{$ORACLE.SERVICE}
+  - **Severity**: Warning
+  - **Expression**: 
+
+### Script
+  - db_invalid.sql
 ---
 
 
