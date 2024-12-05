@@ -64,12 +64,12 @@
 
 ### Trigger
 
-  - **Name**: Oracle数据库进程使用率大于{$.ORACLE.PROC.USED.PCT.WARN}，实例：{$ORACLE.SERVICE}
+  - **Name**: Oracle数据库进程使用率大于{$ORACLE.PROC.USED.PCT.WARN}，实例：{$ORACLE.SERVICE}
   - **Severity**: Warning
   - **Expression**: 
 <br>
   
-  - **Name**: Oracle数据库进程使用率大于{$.ORACLE.PROC.USED.PCT.HIGH}，实例：{$ORACLE.SERVICE}
+  - **Name**: Oracle数据库进程使用率大于{$ORACLE.PROC.USED.PCT.HIGH}，实例：{$ORACLE.SERVICE}
   - **Severity**: High
   - **Expression**: 
 
