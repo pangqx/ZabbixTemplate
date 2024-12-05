@@ -24,8 +24,9 @@
 
   - **Name**: Oracle数据库表空间使用率 (<表空间名>：大于{$ORACLE.TBS.USED.PCT.MAX.WARN}，实例：{$ORACLE.SERVICE})
   - **Severity**: Warning
-  - **Expression**:   <br />
-  <br />
+  - **Expression**:    
+     
+     
   - **Name**: Oracle数据库表空间使用率 (<表空间名>：大于{$ORACLE.TBS.USED.PCT.MAX.HIGH}，实例：{$ORACLE.SERVICE})
   - **Severity**: High
   - **Expression**:
