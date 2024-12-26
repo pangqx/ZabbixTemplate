@@ -109,5 +109,20 @@
   - db_invalid.sql
 ---
 
+### Item
+  - **Name**: Oracle数据库最近一天备份失败任务数量
+  - **Type of information**: Numeric(unsigned)
+  - **Units**: 
+  - **Update interval**: 1d
+
+### Trigger
+
+  - **Name**: Oracle数据库最近一天备份失败任务数量大于0，实例：{$ORACLE.SERVICE}
+  - **Severity**: Warning
+  - **Expression**: 
+
+### Script
+  - db_backup_jobs.sql
+---
 
 
