@@ -125,4 +125,50 @@
   - db_backup_jobs.sql
 ---
 
+### Item
+  - **Name**: Oracle数据库开启并行的表数量
+  - **Type of information**: Numeric(unsigned)
+  - **Units**: 
+  - **Update interval**: 5m
 
+### Trigger
+
+  - **Name**: Oracle数据库开启并行的表数量大于0，实例：{$ORACLE.SERVICE}
+  - **Severity**: Warning
+  - **Expression**: 
+
+### Script
+  - db_parallel_tables.sql
+---
+
+### Item
+  - **Name**: Oracle数据库开启并行的索引数量
+  - **Type of information**: Numeric(unsigned)
+  - **Units**: 
+  - **Update interval**: 5m
+
+### Trigger
+
+  - **Name**: Oracle数据库开启并行的索引数量大于0，实例：{$ORACLE.SERVICE}
+  - **Severity**: Warning
+  - **Expression**: 
+
+### Script
+  - db_parallel_indexes.sql
+---
+
+### Item
+  - **Name**: Oracle数据库内存变动出现错误次数
+  - **Type of information**: Numeric(unsigned)
+  - **Units**: 
+  - **Update interval**: 5m
+
+### Trigger
+
+  - **Name**: Oracle数据库内存变动出现错误次数大于0，实例：{$ORACLE.SERVICE}
+  - **Severity**: Warning
+  - **Expression**: 
+
+### Script
+  - db_memory_resize_ops.sql
+---
