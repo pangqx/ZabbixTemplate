@@ -172,3 +172,35 @@
 ### Script
   - db_memory_resize_ops.sql
 ---
+
+### Item
+  - **Name**: Oracle数据库最近7天RMAN Full备份成功的次数
+  - **Type of information**: Numeric(unsigned)
+  - **Units**: 
+  - **Update interval**: 1d
+
+### Trigger
+
+  - **Name**: Oracle数据库最近7天RMAN Full备份成功的次数为0，实例：{$ORACLE.SERVICE}
+  - **Severity**: Warning
+  - **Expression**: 
+
+### Script
+  - full_backup_jobs.sql
+---
+
+### Item
+  - **Name**: Oracle数据库最近1天RMAN Arch备份成功的次数
+  - **Type of information**: Numeric(unsigned)
+  - **Units**: 
+  - **Update interval**: 1h
+
+### Trigger
+
+  - **Name**: Oracle数据库最近1天RMAN Arch备份成功的次数为0，实例：{$ORACLE.SERVICE}
+  - **Severity**: Warning
+  - **Expression**: 
+
+### Script
+  - arch_backup_jobs.sql
+---
