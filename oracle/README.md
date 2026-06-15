@@ -204,3 +204,19 @@
 ### Script
   - arch_backup_jobs.sql
 ---
+
+### Item
+  - **Name**: 状态为UNUSABLE的索引数量
+  - **Type of information**: Numeric(unsigned)
+  - **Units**: 
+  - **Update interval**: 5m
+
+### Trigger
+
+  - **Name**: Oracle数据库状态为UNUSABLE的索引数量大于0，实例：{$ORACLE.SERVICE}
+  - **Severity**: Warning
+  - **Expression**: 
+
+### Script
+  - unusable_indexes.sql
+---
